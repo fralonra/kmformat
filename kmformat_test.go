@@ -1,4 +1,4 @@
-package kmparse
+package kmformat
 
 import (
 	"testing"
