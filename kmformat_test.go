@@ -17,26 +17,26 @@ func (tl testList) validate(t *testing.T) {
 	}
 }
 
-func TestKFormat(t *testing.T)  {
-  testList{
+func TestKFormat(t *testing.T) {
+	testList{
 		{"100", KFormat(100), "100"},
 		{"1010", KFormat(1010), "1.01k"},
 		{"2566", KFormat(2566), "2.57k"},
-  }.validate(t)
+	}.validate(t)
 }
 
-func TestMFormat(t *testing.T)  {
-  testList{
+func TestMFormat(t *testing.T) {
+	testList{
 		{"1000", MFormat(1000), "1000"},
 		{"1010000", MFormat(1010000), "1.01m"},
 		{"2566000", MFormat(2566000), "2.57m"},
-  }.validate(t)
+	}.validate(t)
 }
 
-func TestFormat(t *testing.T)  {
-  testList{
+func TestFormat(t *testing.T) {
+	testList{
 		{"100", Format(100), "100"},
 		{"1010", Format(1010), "1.01k"},
 		{"2566000", Format(2566000), "2.57m"},
-  }.validate(t)
+	}.validate(t)
 }
